@@ -1,0 +1,37 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :beta do
+    enable_automatic_code_signing
+    increment_build_number
+    build_ios_app(
+      configuration: "Debug",
+      scheme: "SayHello",
+      clean: true,
+      export_method: "development",
+      output_name: "SayHello.ipa"
+    )
+    crashlytics(
+      api_token: "9d9c465f42692bf4e8c81aee818e678b7e2feb23",
+      build_secret: "dca46e0c97adafa088099756e2fe7be95e864973656724c5955fbbb6267cf20a",
+      groups: "DemoApp",
+      notes: "Automatic iOS Build"
+    )
+  end
+end

@@ -1,0 +1,35 @@
+PODS:
+  - Crashlytics (3.13.1):
+    - Fabric (~> 1.10.1)
+  - Fabric (1.10.1)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+
+DEPENDENCIES:
+  - Crashlytics
+  - Fabric
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Fabric
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Crashlytics: 5aa8e90dcbf2f34898b4f5a0037787531246cca0
+  Fabric: f6f21452846788bb44595d73e9909d79d328e617
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+
+PODFILE CHECKSUM: f263cce71327057a0c28ecc3b7aa6de3e2bb13b9
+
+COCOAPODS: 1.7.1
