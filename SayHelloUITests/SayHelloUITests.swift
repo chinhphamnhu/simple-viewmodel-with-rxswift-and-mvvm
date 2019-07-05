@@ -10,19 +10,23 @@ import XCTest
 
 class SayHelloUITests: XCTestCase {
 
+    let app = XCUIApplication()
+
     override func setUp() {
-        let app = XCUIApplication()
+        super.setUp()
         setupSnapshot(app)
         app.launch()
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testSayHello() {
+        snapshot("0Launch")
+        app.textFields["Hello TextField"].tap()
+        UIPasteboard.general.string = "I'm Chính"
+        app.textFields["Hello TextField"].doubleTap()
+        app.menuItems.element(boundBy: 0).tap()
+        app.textFields["Hello TextField"].typeText("\n")
+        snapshot("InputName")
+        app.buttons["Say Hello"].tap()
+        snapshot("Tap To Hello")
     }
-
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
 }

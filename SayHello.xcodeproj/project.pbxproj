@@ -275,6 +275,7 @@
 				E77AB90722A2668A00021930 /* Sources */,
 				E77AB90822A2668A00021930 /* Frameworks */,
 				E77AB90922A2668A00021930 /* Resources */,
+				2A8FE83515031CBF8DEEC4A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,6 +295,7 @@
 				E77AB91222A2668A00021930 /* Sources */,
 				E77AB91322A2668A00021930 /* Frameworks */,
 				E77AB91422A2668A00021930 /* Resources */,
+				171C4DFAA3A4EC74C3F7C040 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -401,6 +403,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		171C4DFAA3A4EC74C3F7C040 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SayHelloUITests/Pods-SayHelloUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SayHelloUITests/Pods-SayHelloUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SayHelloUITests/Pods-SayHelloUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1EAB0B88F79398495747F658 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,6 +435,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SayHello/Pods-SayHello-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A8FE83515031CBF8DEEC4A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SayHelloTests/Pods-SayHelloTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SayHelloTests/Pods-SayHelloTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SayHelloTests/Pods-SayHelloTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		34D6B43C3EA2F9384578A6E0 /* [CP] Check Pods Manifest.lock */ = {

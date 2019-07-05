@@ -11,11 +11,19 @@ target 'SayHello' do
   target 'SayHelloTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxSwift', '~> 5'
+    pod 'RxCocoa', '~> 5'
+    pod 'Fabric'
+    pod 'Crashlytics'
   end
 
   target 'SayHelloUITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxSwift', '~> 5'
+    pod 'RxCocoa', '~> 5'
+    pod 'Fabric'
+    pod 'Crashlytics'
   end
 
 end
