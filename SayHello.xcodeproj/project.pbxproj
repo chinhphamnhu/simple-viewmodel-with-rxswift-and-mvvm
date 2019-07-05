@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		20BF61894E97ECD0576EBF7C /* Pods_SayHello.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A02370DA58018DE43B69E2 /* Pods_SayHello.framework */; };
 		69AE414722CEF3A0003E2234 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE414622CEF3A0003E2234 /* SnapshotHelper.swift */; };
+		69AE415022CEFE2C003E2234 /* IncorrectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AE414E22CEFE2C003E2234 /* IncorrectViewController.swift */; };
+		69AE415122CEFE2C003E2234 /* IncorrectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AE414F22CEFE2C003E2234 /* IncorrectViewController.xib */; };
 		CFEA16E55532815C794AC064 /* Pods_SayHelloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4BCB0D320DF82E1AE165CA /* Pods_SayHelloTests.framework */; };
 		E77AB8FB22A2668800021930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77AB8FA22A2668800021930 /* AppDelegate.swift */; };
 		E77AB90222A2668A00021930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77AB90122A2668A00021930 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		60CFEF5E489892EC12FA020F /* Pods-SayHello.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SayHello.debug.xcconfig"; path = "Target Support Files/Pods-SayHello/Pods-SayHello.debug.xcconfig"; sourceTree = "<group>"; };
 		68639812CB528AC519CA41E9 /* Pods-SayHello.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SayHello.release.xcconfig"; path = "Target Support Files/Pods-SayHello/Pods-SayHello.release.xcconfig"; sourceTree = "<group>"; };
 		69AE414622CEF3A0003E2234 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		69AE414E22CEFE2C003E2234 /* IncorrectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncorrectViewController.swift; sourceTree = "<group>"; };
+		69AE414F22CEFE2C003E2234 /* IncorrectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncorrectViewController.xib; sourceTree = "<group>"; };
 		BB4BCB0D320DF82E1AE165CA /* Pods_SayHelloTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SayHelloTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4AA4C4528F93D06CB701EC /* Pods_SayHelloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SayHelloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C409A3D4F605D5041EA852FC /* Pods-SayHelloUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SayHelloUITests.release.xcconfig"; path = "Target Support Files/Pods-SayHelloUITests/Pods-SayHelloUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +120,15 @@
 				BC4AA4C4528F93D06CB701EC /* Pods_SayHelloUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69AE414D22CEFE1A003E2234 /* Incorrect */ = {
+			isa = PBXGroup;
+			children = (
+				69AE414E22CEFE2C003E2234 /* IncorrectViewController.swift */,
+				69AE414F22CEFE2C003E2234 /* IncorrectViewController.xib */,
+			);
+			path = Incorrect;
 			sourceTree = "<group>";
 		};
 		E77AB8EE22A2668800021930 = {
@@ -191,6 +204,7 @@
 		E77AB92A22A2670800021930 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				69AE414D22CEFE1A003E2234 /* Incorrect */,
 				E77AB92D22A2675100021930 /* Home */,
 			);
 			path = Controllers;
@@ -341,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69AE415122CEFE2C003E2234 /* IncorrectViewController.xib in Resources */,
 				E77AB90522A2668A00021930 /* LaunchScreen.storyboard in Resources */,
 				E77AB90222A2668A00021930 /* Assets.xcassets in Resources */,
 				E77AB93122A2675F00021930 /* HomeViewController.xib in Resources */,
@@ -475,6 +490,7 @@
 			files = (
 				E77AB8FB22A2668800021930 /* AppDelegate.swift in Sources */,
 				E77AB93022A2675F00021930 /* HomeViewController.swift in Sources */,
+				69AE415022CEFE2C003E2234 /* IncorrectViewController.swift in Sources */,
 				E77AB93522A2683400021930 /* ViewModelType.swift in Sources */,
 				E77AB93722A2686B00021930 /* HomeViewModel.swift in Sources */,
 			);
