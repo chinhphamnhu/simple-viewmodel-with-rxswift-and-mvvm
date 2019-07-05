@@ -14,6 +14,6 @@ class IncorrectViewController: UIViewController {
         super.viewDidLoad()
 
         // incorrect variable
-        var test = 'travis'
+        var test = "travis"
     }
 }
