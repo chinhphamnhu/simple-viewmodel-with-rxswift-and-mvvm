@@ -12,8 +12,5 @@ class IncorrectViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // incorrect variable
-        var test = "travis"
     }
 }
