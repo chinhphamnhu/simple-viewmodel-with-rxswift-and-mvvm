@@ -28,8 +28,8 @@ platform :ios do
       output_name: "SayHello.ipa"
     )
     crashlytics(
-      api_token: "9d9c465f42692bf4e8c81aee818e678b7e2feb23",
-      build_secret: "dca46e0c97adafa088099756e2fe7be95e864973656724c5955fbbb6267cf20a",
+      api_token: "API_TOKEN",
+      build_secret: "SECRET_KEY",
       groups: "DemoApp",
       notes: "Automatic iOS Build"
     )
